@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Ruleta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Agent Roulette - Valorant</h1>
+        <h2>Bored of playing the same old game, let a roulette wheel guide you, choose a role and spin the wheel :) </h2>
+    </header>
+    <main>
+        <section>
+            <label for="role-select">Selecciona un rol:</label>
+            <select id="role-select">
+                <option value="controller">Controlador</option>
+                <option value="duelist">Duelista</option>
+                <option value="initiator">Iniciador</option>
+                <option value="sentinel">Centinela</option>
+            </select>
+            <button id="spin-button">Girar Ruleta</button>
+        </section>
+        <section id="roulette-container">
+            <div id="roulette">
+            </div>
+        </section>
+        <section id="result">
+            <h2>Agente Seleccionado:</h2>
+            <img id="agent-image" src="images/default.png" alt="Agente" style="width: 200px; height: auto; display: none;">
+            <p id="selected-agent">Ninguno</p>
+        </section>
+        <p>I am not responsible if you cause your team to lose. *_*</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
